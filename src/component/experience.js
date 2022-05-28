@@ -38,21 +38,30 @@ export default class Experience extends Component {
 							</ul>
 							<div>
 								<div className={ this.state.tabActive != 'descCotafer' ? 'hidden tab-content': 'tab-content'} id="descCotafer">
-									<div className="text-xl text-light mb-3">Web developer at <span className="text-main">Cotafer</span></div>
+									<div className="text-xl text-light mb-3">Web developer at <a href="https://cotafer.group/" className="text-main">Cotafer</a></div>
 									<small className="font-mono mb-3 block">Febuary 2020 - Present</small>
 									<ul className="triangle flex flex-col space-y-2">
-										<li className="font-mono text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, autem!</li>
-										<li className="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A debitis eaque aperiam?</li>
-										<li className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid quidem nam dolore cupiditate perferendis ratione.</li>
+										<li>API development</li>
+										<li>SQL development</li>
+										<li>Server-side development</li>
+										<li>Client-side development</li>
+										<li>Supporting document for mobile team</li>
+										<li>Test projects and report the error or bug found</li>
+										<li>Managing and guide junior and intern</li>
+										<li>Additional assignment from supervisor</li>
 									</ul>
 								</div>
+								{/* Vattanac */}
 								<div className={this.state.tabActive != 'descVattanac' ? "hidden tab-content" : "tab-content"} id="descVattanac">
-									<div className="text-xl text-light mb-3">Senior Receptionist at <span className="text-main">Vattanac Properties</span></div>
+									<div className="text-xl text-light mb-3">Receptionist at <a href="https://www.vattanaccapital.com/" className="text-main">Vattanac Properties</a></div>
 									<small className="font-mono mb-3 block">January 2017 - Febuary 2020</small>
-									<ul className="flex flex-col space-y-2">
-										<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, autem!</li>
-										<li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A debitis eaque aperiam?</li>
-										<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid quidem nam dolore cupiditate perferendis ratione.</li>
+									<ul className="triangle flex flex-col space-y-2">
+										<li>Warming Welcome to the Customers and visitors by greeting them, in person or on the telephone, answering or referring inquiries.</li>
+										<li>Work with the promotion (over 17 stores under <strong>Vattanac Investment Limited</strong>).</li>
+										<li>Record the visitors log book</li>
+										<li>Record the customers came to visit mall and tenants</li>
+										<li>Do reports and present them to the manager such as the figures of visitor visited the mall and tenants</li>
+										<li>Mall inspection</li>
 									</ul>
 								</div>
 							</div>
