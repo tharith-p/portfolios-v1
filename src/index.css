@@ -34,7 +34,7 @@ ul.triangle li::before{
 }
 
 /* .tab ul li:active, */
-.tab ul li:focus {
+.tab ul li button:focus {
     background-color: red;
     @apply bg-gray bg-opacity-5 text-main;
 }
