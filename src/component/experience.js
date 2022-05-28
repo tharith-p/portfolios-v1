@@ -6,7 +6,6 @@ export default class Experience extends Component {
 		this.state 			= { tabActive: 'descCotafer' };
 		this.setTabActive 	= this.setTabActive.bind(this);
 	}
-	
 	setTabActive(el) {
 		let toActive = el.target.getAttribute('datatarget');
 		this.setState(() => ({ tabActive: toActive }));
@@ -37,7 +36,7 @@ export default class Experience extends Component {
 								<li tabIndex="1"><button onClick={this.setTabActive} tabIndex="1" datatarget="descVattanac" className="h-[35px] text-[13px] transition-all hover:bg-opacity-5 hover:bg-gray hover:text-main font-code tab-toggler text-left px-4 w-full">Vattanac Properties</button></li>
 							</ul>
 							<div>
-								<div className={ this.state.tabActive != 'descCotafer' ? 'hidden tab-content': 'tab-content'} id="descCotafer">
+								<div className={ this.state.tabActive !== 'descCotafer' ? 'hidden tab-content': 'tab-content'} id="descCotafer">
 									<div className="text-xl text-light mb-3">Web developer at <a href="https://cotafer.group/" className="text-main">Cotafer</a></div>
 									<small className="font-mono mb-3 block">Febuary 2020 - Present</small>
 									<ul className="triangle flex flex-col space-y-2">
@@ -52,7 +51,7 @@ export default class Experience extends Component {
 									</ul>
 								</div>
 								{/* Vattanac */}
-								<div className={this.state.tabActive != 'descVattanac' ? "hidden tab-content" : "tab-content"} id="descVattanac">
+								<div className={this.state.tabActive !== 'descVattanac' ? "hidden tab-content" : "tab-content"} id="descVattanac">
 									<div className="text-xl text-light mb-3">Receptionist at <a href="https://www.vattanaccapital.com/" className="text-main">Vattanac Properties</a></div>
 									<small className="font-mono mb-3 block">January 2017 - Febuary 2020</small>
 									<ul className="triangle flex flex-col space-y-2">
