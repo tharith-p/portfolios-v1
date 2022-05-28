@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header.stick {
+    background: #0a1930;
+    background: linear-gradient(to right bottom, rgba(10,25,48, .5), rgba(10,25,48, 0.4));
+    backdrop-filter: blur(.7rem);
+    @apply shadow-md;
+}
+
+body {
+  /* Set "my-sec-counter" to 0 */
+  counter-reset: b-section;
+}
+.b-section::before {
+    counter-increment: b-section 1;
+    content: "0" counter(b-section) ".";
+    float: left;
+    @apply mr-3 relative text-main font-code;
+}
+
+ul.triangle li {
+    position: relative;
+    padding-left: 15px;
+}
+
+ul.triangle li::before{
+    content: '▹';
+    position:absolute;
+    left: 0;
+    @apply text-main;
+}
+
+/* .tab ul li:active, */
+.tab ul li:focus {
+    background-color: red;
+    @apply bg-gray bg-opacity-5 text-main;
+}
+
+.tab-content {
+    animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
