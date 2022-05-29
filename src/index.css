@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 header.stick {
-    background: #0a1930;
-    background: linear-gradient(to right bottom, rgba(10,25,48, .5), rgba(10,25,48, 0.4));
-    backdrop-filter: blur(.7rem);
+    background      : #0a1930;
+    background      : linear-gradient(to right bottom, rgba(10,25,48, .5), rgba(10,25,48, 0.4));
+    backdrop-filter : blur(.7rem);
     @apply shadow-md;
 }
 
@@ -16,21 +16,21 @@ body {
   counter-reset: b-section;
 }
 .b-section::before {
-    counter-increment: b-section 1;
-    content: "0" counter(b-section) ".";
-    float: left;
+    counter-increment   : b-section 1;
+    content             : "0" counter(b-section) ".";
+    float               : left;
     @apply mr-3 relative text-main font-code;
 }
 
 ul.triangle li {
-    position: relative;
+    position    : relative;
     padding-left: 15px;
 }
 
 ul.triangle li::before{
-    content: '▹';
-    position:absolute;
-    left: 0;
+    content     : '▹';
+    position    :absolute;
+    left        : 0;
     @apply text-main;
 }
 
@@ -46,4 +46,29 @@ ul.triangle li::before{
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+.hov\:und {
+    position: relative;
+}
+
+/* Hover to show underline */
+.hov\:und::before {
+    content         : '';
+    display         : block;
+    position        : absolute;
+    border-radius   : 1px;
+    left            : 0;
+    right           : 0;
+    bottom          : -2px;
+    height          : 2px;
+    transform       : translateY(-5px);
+    opacity         : 0;
+    transition      : transform .2s ease, opacity .2s ease;
+    @apply bg-main;
+}
+
+.hov\:und:hover::before {
+    transform   : translateY(0);
+    opacity     : 1;
 }
