@@ -2,6 +2,7 @@ import About from './component/about';
 import Experience from './component/experience';
 import Header from './component/header';
 import Hero from './component/hero';
+import Project from './component/project';
 
 function App() {
 	
@@ -16,6 +17,7 @@ function App() {
 					<Experience />
 				</div>
 			</div>
+			<Project />
 		</div>
 	);
 }

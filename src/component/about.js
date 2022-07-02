@@ -15,7 +15,7 @@ export default class Experience extends Component {
 	
 	render() {
 		return (
-			<div className="h-[calc(100vh*.6)] flex items-center">
+			<div className="min-h-[calc(100vh*.6)] flex items-center">
 				<div>
 					<div className="flex items-center space-x-3 mb-12">
 						<div className="b-section font-bold text-3xl text-light">About</div>

@@ -69,7 +69,10 @@ export default class Experience extends Component {
 								{/* Tab title */}
 								{
 									exps.map(exp => 
-										<li tabIndex="1">
+										<li
+											tabIndex="1"
+											key={ exp.id }
+										>
 											<button 
 												onClick={this.setTabActive}
 												tabIndex="1"
@@ -108,5 +111,4 @@ export default class Experience extends Component {
 			</div>
 		);
 	}
-
 }
