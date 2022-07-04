@@ -25,9 +25,9 @@ export default class Header extends Component {
                         <li className="text-light hover:text-main "><a href="/" className="hov:und"><span className="text-main">03.</span> Work</a></li>
                         <li className="text-light hover:text-main "><a href="/" className="hov:und"><span className="text-main">04.</span> Contact</a></li>
                         <li>
-                            <button className="text-main border-2 border-main rounded px-4 py-2">
+                            <a href="tharith_PHORN.pdf" download className="text-main border-2 border-main rounded px-4 py-2">
                                 Resume
-                            </button>
+                            </a>
                         </li>
                     </ul>
                     <div className="flex items-center">
@@ -45,7 +45,7 @@ export default class Header extends Component {
                         <li className="py-2"><a className="hov:und" href="/">Work</a></li>
                         <li className="py-2"><a className="hov:und" href="/">Contact</a></li>
                         <li className="py-2">
-                            <button className="py-2 px-5 rounded border-main border-2 transition-colors hover:bg-blue-200 text-main hover:text-dark-400">Resume</button>
+                            <a href="/tharith_PHORN.pdf" download className="py-2 px-5 rounded border-main border-2 transition-colors hover:bg-blue-200 text-main hover:text-dark-400">Resume</a>
                         </li>
                     </ul>
                 </div>
